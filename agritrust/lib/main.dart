@@ -1,34 +1,20 @@
 import 'package:flutter/material.dart';
-void main(){
-  runApp(const CSCDAY());
+import 'screens/login_screen.dart'; // Replace with your actual screen imports
+
+void main() {
+  runApp(MyApp());
 }
 
-
-
-class CSCDAY extends StatelessWidget{
-  const CSCDAY({super.key});
-
-
-@override
+class MyApp extends StatelessWidget {
+  @override
   Widget build(BuildContext context) {
-   return MaterialApp(
-home: Scaffold(
-  appBar: AppBar(title: const Text("cs")
-),
-
-body:Body()
-   ),
-   );
+    return MaterialApp(
+      title: 'Agritrust',
+      theme: ThemeData(
+        primarySwatch: Colors.green,
+        visualDensity: VisualDensity.adaptivePlatformDensity,
+      ),
+      home: LoginScreen(), // Replace with your initial screen
+    );
   }
-
-
-}
-class Body extends StatelessWidget{
-@override
-Widget build(BuildContext context) {
-  return Center( 
-    child: Text("hi"),
-  );
-}
-
 }

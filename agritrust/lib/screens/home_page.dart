@@ -8,10 +8,18 @@ import 'package:flutter/material.dart';
 
   @override
   Widget build(BuildContext context) {
+
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 136, 221, 213),
       appBar: AppBar(
         title: const Text('Agrotrust'),
+    return Container(
+      decoration: const BoxDecoration(
+        image: DecorationImage(
+          image: AssetImage('lib/images/agrochemicals2.jpg'),
+          fit: BoxFit.cover,
+        ),
+
       ),
       body: Center(
         child: Column(

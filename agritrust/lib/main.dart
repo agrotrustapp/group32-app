@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.green,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: const HomePage(), // Replace with your initial screen
+      home: HomePage(), // Replace with your initial screen
     );
   }
 }

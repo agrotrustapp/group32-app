@@ -1,11 +1,14 @@
+import 'package:agritrust/screens/home_page.dart';
 import 'package:flutter/material.dart';
-import 'screens/login_screen.dart'; // Replace with your actual screen imports
+// Replace with your actual screen imports
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -14,7 +17,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.green,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: LoginScreen(), // Replace with your initial screen
+      home: const HomePage(), // Replace with your initial screen
     );
   }
 }
